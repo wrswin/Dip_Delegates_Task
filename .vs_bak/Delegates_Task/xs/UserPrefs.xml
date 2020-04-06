@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{443205AC-B505-4120-BE46-3A18DF9AB7FD}|Default">
+  <MonoDevelop.Ide.ItemProperties.Delegate__Exercise PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PersonHandlerTests/Tests.cs">
+    <Files>
+      <File FileName="PersonHandlerTests/Tests.cs" Line="27" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Delegates_Task" expanded="True" selected="True">
+            <Node name="PersonHandlerTests" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Delegates_Task" expanded="True">
+            <Node name="FileParserTests" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

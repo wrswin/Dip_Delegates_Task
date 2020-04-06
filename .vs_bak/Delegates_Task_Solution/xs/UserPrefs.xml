@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{443205AC-B505-4120-BE46-3A18DF9AB7FD}|Default">
+  <MonoDevelop.Ide.ItemProperties.Delegate__Exercise PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Delegates_Task_Solution" expanded="True">
+            <Node name="Delegate_Exercise" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+            <Node name="PersonHandlerTests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Delegates_Task_Solution" expanded="True">
+            <Node name="PersonHandlerTests" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
