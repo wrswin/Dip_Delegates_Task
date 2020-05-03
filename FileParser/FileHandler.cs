@@ -15,9 +15,23 @@ namespace FileParser {
         /// <param name="filePath"></param>
         /// <returns></returns>
         public List<string> ReadFile(string filePath) {
-            List<string> lines = new List<string>();
+            var lines = new List<string>();
 
-            return lines; //-- return result here
+            var reader = new StreamReader(filePath);
+
+            while(true) {
+                var line = reader.ReadLine();
+
+                if(line == null) {
+                    break;
+                }
+
+                lines.Add(line);
+            }
+
+            reader.Close();
+
+            return lines;
         }
 
         
@@ -28,8 +42,21 @@ namespace FileParser {
         /// <param name="delimeter"></param>
         /// <param name="rows"></param>
         public void WriteFile(string filePath, char delimeter, List<List<string>> rows) {
+            var writer = new StreamWriter(filePath, false);
 
-            
+            foreach(var row in rows) {
+                for(var i = 0; i < row.Count; i += 1) {
+                    writer.Write(row[i]);
+
+                    if(i != row.Count - 1) {
+                        writer.Write(delimeter);
+                    }
+                }
+
+                writer.WriteLine();
+            }
+
+            writer.Close();
         }
         
         /// <summary>
@@ -39,9 +66,15 @@ namespace FileParser {
         /// <param name="delimiter"></param>
         /// <returns></returns>
         public List<List<string>> ParseData(List<string> data, char delimiter) {
-            List<List<string>> result = new List<List<string>>();
+            var result = new List<List<string>>();
 
-            return result; //-- return result here
+            foreach(var line in data) {
+                var columns = line.Split(new char[] { delimiter });
+
+                result.Add(new List<string>(columns));
+            }
+
+            return result;
         }
         
         /// <summary>
@@ -50,8 +83,15 @@ namespace FileParser {
         /// <param name="data"></param>
         /// <returns></returns>
         public List<List<string>> ParseCsv(List<string> data) {
-            
-            return new List<List<string>>();  //-- return result here
+            var result = new List<List<string>>();
+
+            foreach(var line in data) {
+                var columns = line.Split(new char[] { ',' });
+
+                result.Add(new List<string>(columns));
+            }
+
+            return result;
         }
     }
 }
